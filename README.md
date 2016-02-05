@@ -43,5 +43,5 @@ Following folder structure:
 
 - [x] C:\Program Files\Java\jdk1.8.0_72
 - [x] C:\Program Files (x86)\Git\
-- [x] C:\Progs\apache-maven-3.3.3\
-- [x] C:\Progs\apache-tomcat-8.0.20\
+- [x] C:\Progs\apache-maven-3.3.9\
+- [x] C:\Progs\apache-tomcat-8.0.30\
