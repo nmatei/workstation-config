@@ -2,4 +2,6 @@
 target/
 *.iml
 
-
+# applications
+installers/*.zip
+installers/*.exe
