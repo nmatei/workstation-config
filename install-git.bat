@@ -3,6 +3,7 @@
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
+set "GIT_HOME_TMP=C:\Program Files\Git"
 
 rem ========================================
 if not "%GIT_HOME%" == "" goto hasApp
@@ -12,12 +13,13 @@ echo  ==============================
 echo please wait...
 
 cd "%CURRENT_DIR%\installers"
-Git-2.5.0-64-bit.exe /SILENT
+Git-2.7.0.2-64-bit.exe /SILENT
 
-setx /M GIT_HOME "C:\Program Files\Git"
-echo adding: GIT_HOME=%GIT_HOME%
+setx /M GIT_HOME "%GIT_HOME_TMP%"
+set "GIT_HOME=%GIT_HOME_TMP%"
+echo adding: GIT_HOME=%GIT_HOME_TMP%
 
-echo adding: PATH="%%PATH%%;%%GIT_HOME%%\bin"
+rem echo adding: PATH="%%PATH%%;%%GIT_HOME%%\bin"
 rem setx /M PATH "%PATH%;%%GIT_HOME%%\bin"
 
 goto done

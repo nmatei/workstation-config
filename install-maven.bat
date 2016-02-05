@@ -5,7 +5,7 @@ set "PROGS_DIR=C:\Progs"
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
-set "M2_VERSION=3.3.3"
+set "M2_VERSION=3.3.9"
 set "M2_HOME_TMP=%PROGS_DIR%\apache-maven-%M2_VERSION%"
 
 rem ========================================
@@ -21,9 +21,10 @@ move apache-maven-%M2_VERSION% "%PROGS_DIR%/"
 cd ..
 
 setx /M M2_HOME "%M2_HOME_TMP%"
+set "M2_HOME=%M2_HOME_TMP%"
 echo adding: M2_HOME=%M2_HOME_TMP%
 
-echo adding: PATH="PATH;%%M2_HOME%%\bin"
+rem echo adding: PATH="PATH;%%M2_HOME%%\bin"
 rem setx /M PATH "%%PATH%%;%%M2_HOME%%\bin"
 
 goto done

@@ -3,6 +3,7 @@
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
+set "JAVA_HOME_TMP=C:\Program Files\Java\jdk1.8.0_72"
 
 rem ========================================
 if not "%JAVA_HOME%" == "" goto hasApp
@@ -14,10 +15,11 @@ echo please wait...
 cd "%CURRENT_DIR%\installers"
 jdk-8u72-windows-x64.exe /quiet
 
-setx /M JAVA_HOME "C:\Program Files\Java\jdk1.8.0_72"
-echo adding: JAVA_HOME=%JAVA_HOME%
+setx /M JAVA_HOME "%JAVA_HOME_TMP%"
+set "JAVA_HOME=%JAVA_HOME_TMP%"
+echo adding: JAVA_HOME=%JAVA_HOME_TMP%
 
-echo adding: PATH="%%PATH%%;%%JAVA_HOME%%\bin"
+rem echo add: PATH="%%PATH%%;%%JAVA_HOME%%\bin"
 rem setx /M PATH "%PATH%;%%JAVA_HOME%%\bin"
 
 goto done

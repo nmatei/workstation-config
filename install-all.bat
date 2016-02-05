@@ -14,12 +14,16 @@ pause
 echo ----
 
 call install-java.bat
+cd /d "%~dp0"
 
 call install-git.bat
+cd /d "%~dp0"
 
 call install-maven.bat
+cd /d "%~dp0"
 
 call install-tomcat.bat
+cd /d "%~dp0"
 
 echo  ================================================
 echo ^| http://www.fasttrackit.org/
