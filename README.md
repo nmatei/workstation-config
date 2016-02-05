@@ -4,13 +4,13 @@
 
 Make sure you have all this applications in '[installers/](installers/)' folder:
 
+- [x] **Manually** download/add each installer in: [installers/](installers/)
+
+or run download-all.bat, then manually missing apps : *Java*, *Git*
+
 - [ ] **Run** [installers\download-all.bat](installers\download-all.bat) (Temporary is not able to download all apps so use Manual download)
     
     is working for **Tomcat**, **Maven** and **ideaIU**
-
-or
-
-- [x] **Manually** download each installer and put them in [installers/](installers/) folder
 
 
 ### Applications
