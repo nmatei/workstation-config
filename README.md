@@ -10,7 +10,7 @@ or run download-all.bat, then manually missing apps : *Java*, *Git*
 
 - [ ] **Run** [installers\download-all.bat](installers\download-all.bat) (Temporary is not able to download all apps so use Manual download)
     
-    is working for **Tomcat**, **Maven** and **ideaIU**
+    is working for **Tomcat**, **Maven**, **ideaIU** and **postgresql**
 
 
 ### Applications
@@ -37,11 +37,11 @@ and add next line at the end of it:
 
 ## Results
 
-At the end of this script you'll have:
+At the end of this script you'll probable (if the each app have been installed), have:
 
 Following folder structure:
 
-- [x] C:\Program Files\Java\jdk1.8.0_72
+- [x] C:\Program Files\Java\jdk1.8.0_72\
 - [x] C:\Program Files (x86)\Git\
 - [x] C:\Progs\apache-maven-3.3.9\
 - [x] C:\Progs\apache-tomcat-8.0.30\
