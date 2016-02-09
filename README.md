@@ -24,7 +24,7 @@ or run [`download-all.bat`](installers\download-all.bat), then manually download
 
 ## Running installers
 
-- [ ] Select `install-all.bat`
+- [ ] Select [`install-all.bat`](install-all.bat)
 - [ ] Right click -> `Run as administrator`
 
 ## Manual setup
