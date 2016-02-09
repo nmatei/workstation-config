@@ -29,11 +29,13 @@ or run download-all.bat, then manually missing apps : *Java*, *Git*
 
 ## Manual setup
 
-Edit 'Path' variables (Environment Variables / System variables / Path (select path) / Edit...),
+**Edit `Path` variables**
+Rigth Click on `My Computer` -> `Properties` -> `Advanced system settings` -> `Advanced` -> 
+`Environment Variables` -> `System variables` -> `Path` (select path) -> `Edit` ...
    
 and add next line at the end of it:
 
-    %JAVA_HOME%\bin;%M2_HOME%\bin;;%GIT_HOME%\bin; 
+`%JAVA_HOME%\bin;%M2_HOME%\bin;;%GIT_HOME%\bin;` 
 
 ## Results
 
@@ -41,7 +43,7 @@ At the end of this script you'll probable (if the each app have been installed),
 
 Following folder structure:
 
-- [x] C:\Program Files\Java\jdk1.8.0_72\
-- [x] C:\Program Files (x86)\Git\
-- [x] C:\Progs\apache-maven-3.3.9\
-- [x] C:\Progs\apache-tomcat-8.0.30\
+- [x] `C:\Program Files\Java\jdk1.8.0_72\`
+- [x] `C:\Program Files (x86)\Git\`
+- [x] `C:\Progs\apache-maven-3.3.9\`
+- [x] `C:\Progs\apache-tomcat-8.0.30\`
