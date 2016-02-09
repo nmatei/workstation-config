@@ -30,6 +30,7 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 ## Manual setup
 
 **Edit `Path` variables**
+
 Rigth Click on `My Computer` -> `Properties` -> `Advanced system settings` -> `Advanced` -> 
 `Environment Variables` -> `System variables` -> `Path` (select path) -> `Edit` ...
    
