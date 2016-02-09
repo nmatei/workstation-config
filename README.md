@@ -6,9 +6,9 @@ Make sure you have all this applications in '[installers/](installers/)' folder:
 
 - [x] **Manually** download/add each installer in: [installers/](installers/)
 
-or run download-all.bat, then manually missing apps : *Java*, *Git*
+or run [`download-all.bat`](installers\download-all.bat), then manually download missing apps : *Java*, *Git*
 
-- [ ] **Run** [installers\download-all.bat](installers\download-all.bat) (Temporary is not able to download all apps so use Manual download)
+- [ ] **Run** [`installers\download-all.bat`](installers\download-all.bat) (Temporary is not able to download all apps so use Manual download)
     
     is working for **Tomcat**, **Maven**, **ideaIU** and **postgresql**
 
@@ -24,8 +24,8 @@ or run download-all.bat, then manually missing apps : *Java*, *Git*
 
 ## Running installers
 
-- [ ] Select install-all.bat
-- [ ] Right click -> Run as administrator
+- [ ] Select `install-all.bat`
+- [ ] Right click -> `Run as administrator`
 
 ## Manual setup
 
