@@ -15,8 +15,8 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 
 ### Applications
 
-- [x] **Java** [`installers/jdk-8u72-windows-x64.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [x] **Git** [`installers/Git-2.7.0.2-64-bit.exe`](https://git-scm.com/download/win)
+- [x] **Java** [`installers/jdk-8u73-windows-x64.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) OR [`installers/jdk-8u73-windows-i586.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [x] **Git** [`installers/Git-2.7.1.2-64-bit.exe`](https://github.com/git-for-windows/git/releases/download/v2.7.1.windows.2/Git-2.7.1.2-64-bit.exe) OR [`installers/Git-2.7.1.2-32-bit.exe`](https://github.com/git-for-windows/git/releases/download/v2.7.1.windows.2/Git-2.7.1.2-32-bit.exe)
 - [x] **Maven** [`installers/apache-maven-3.3.3-bin.zip`](https://maven.apache.org/download.cgi)
 - [x] **Tomcat** [`installers/apache-tomcat-8.0.20-bin.zip`](https://tomcat.apache.org/index.html)
 - [ ] IntelliJ IDEA [`installers/ideaIU-15.0.3.exe`](https://www.jetbrains.com/idea/)
@@ -31,12 +31,14 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 
 **Edit `Path` variables**
 
+**Windows 10**:
+
 Rigth Click on `My Computer` -> `Properties` -> `Advanced system settings` -> `Advanced` -> 
-`Environment Variables` -> `System variables` -> `Path` (select path) -> `Edit` ...
+`Environment Variables` -> `System variables` -> `Path` (select path) -> `Edit` ... 
    
 and add next line at the end of it:
 
-`%JAVA_HOME%\bin;%M2_HOME%\bin;;%GIT_HOME%\bin;` 
+`;%JAVA_HOME%\bin;%M2_HOME%\bin;%GIT_HOME%\bin;` 
 
 ## Results
 
@@ -44,7 +46,7 @@ At the end of this script you'll probable (if the each app have been installed),
 
 Following folder structure:
 
-- [x] `C:\Program Files\Java\jdk1.8.0_72\`
+- [x] `C:\Program Files\Java\jdk1.8.0_73\`
 - [x] `C:\Program Files (x86)\Git\`
 - [x] `C:\Progs\apache-maven-3.3.9\`
 - [x] `C:\Progs\apache-tomcat-8.0.30\`

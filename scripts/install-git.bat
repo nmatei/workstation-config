@@ -12,8 +12,15 @@ echo ^| installing and setup git   ^|
 echo  ==============================
 echo please wait...
 
-cd "%CURRENT_DIR%\installers"
-Git-2.7.0.2-64-bit.exe /SILENT
+cd "%CURRENT_DIR%\..\installers"
+
+if defined ProgramFiles(x86) (
+    @echo installing git for 64-bit
+    Git-2.7.1.2-64-bit.exe /SILENT
+) else (
+    @echo installing git for 32-bit
+    Git-2.7.1.2-32-bit.exe /SILENT
+)
 
 setx /M GIT_HOME "%GIT_HOME_TMP%"
 set "GIT_HOME=%GIT_HOME_TMP%"
@@ -29,4 +36,4 @@ echo [git] already installed
 
 :done
 echo GIT_HOME=%GIT_HOME%
-echo --
+echo ==============================

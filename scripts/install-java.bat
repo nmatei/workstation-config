@@ -3,7 +3,7 @@
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
-set "JAVA_HOME_TMP=C:\Program Files\Java\jdk1.8.0_72"
+set "JAVA_HOME_TMP=C:\Program Files\Java\jdk1.8.0_73"
 
 rem ========================================
 if not "%JAVA_HOME%" == "" goto hasApp
@@ -12,8 +12,15 @@ echo ^| installing and setup java  ^|
 echo  ==============================
 echo please wait...
 
-cd "%CURRENT_DIR%\installers"
-jdk-8u72-windows-x64.exe /quiet
+cd "%CURRENT_DIR%\..\installers"
+
+if defined ProgramFiles(x86) (
+    @echo installing java for 64-bit
+    jdk-8u73-windows-x64.exe /quiet
+) else (
+    @echo installing java for 32-bit
+    jdk-8u73-windows-i586.exe /quiet
+)
 
 setx /M JAVA_HOME "%JAVA_HOME_TMP%"
 set "JAVA_HOME=%JAVA_HOME_TMP%"
@@ -29,4 +36,4 @@ echo [java] already installed
 
 :done
 echo JAVA_HOME=%JAVA_HOME%
-echo --
+echo ==============================

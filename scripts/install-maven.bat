@@ -2,6 +2,8 @@
 
 set "PROGS_DIR=C:\Progs"
 
+mkdir %PROGS_DIR%
+
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
@@ -13,7 +15,7 @@ if not "%M2_HOME%" == "" goto hasApp
 echo  ==============================
 echo ^| install and setup maven    ^|
 echo  ==============================
-cd "%CURRENT_DIR%\installers"
+cd "%CURRENT_DIR%\..\installers"
 
 "%JAVA_HOME%\bin\jar" xf apache-maven-%M2_VERSION%-bin.zip
 move apache-maven-%M2_VERSION% "%PROGS_DIR%/"
@@ -34,4 +36,4 @@ echo [maven] already installed
 
 :done
 echo M2_HOME=%M2_HOME%
-echo --
+echo ==============================

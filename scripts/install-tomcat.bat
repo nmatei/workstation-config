@@ -2,6 +2,8 @@
 
 set "PROGS_DIR=C:\Progs"
 
+mkdir %PROGS_DIR%
+
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
@@ -13,7 +15,7 @@ if exist "%CATALINA_HOME_TMP%\bin\catalina.bat" goto hasApp
 echo  ==============================
 echo ^| install and setup tomcat   ^|
 echo  ==============================
-cd "%CURRENT_DIR%\installers"
+cd "%CURRENT_DIR%\..\installers"
 
 "%JAVA_HOME%\bin\jar" xf apache-tomcat-%TOMCAT_VERSION%.zip
 move apache-tomcat-%TOMCAT_VERSION% "%PROGS_DIR%/"
@@ -31,4 +33,4 @@ echo [tomcat] already installed
 
 :done
 echo CATALINA_HOME=%CATALINA_HOME%
-echo --
+echo ==============================
