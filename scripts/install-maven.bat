@@ -2,8 +2,6 @@
 
 set "PROGS_DIR=C:\Progs"
 
-mkdir %PROGS_DIR%
-
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
@@ -17,8 +15,17 @@ echo ^| install and setup maven    ^|
 echo  ==============================
 cd "%CURRENT_DIR%\..\installers"
 
+echo unziping apache-maven-%M2_VERSION%-bin.zip...
 "%JAVA_HOME%\bin\jar" xf apache-maven-%M2_VERSION%-bin.zip
-move apache-maven-%M2_VERSION% "%PROGS_DIR%/"
+
+rem move could not work if installer folder is on other drive (D: for example)
+rem move apache-maven-%M2_VERSION% "%PROGS_DIR%/"
+
+mkdir "%PROGS_DIR%\apache-maven-%M2_VERSION%"
+echo copying apache-maven-%M2_VERSION%...
+xcopy /HEQ apache-maven-%M2_VERSION% "%PROGS_DIR%\apache-maven-%M2_VERSION%"
+echo removing apache-maven-%M2_VERSION%...
+rmdir /S /Q apache-maven-%M2_VERSION%
 
 cd ..
 

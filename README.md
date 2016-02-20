@@ -10,11 +10,12 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 
 - [ ] **Run** [`installers/download-all.bat`](installers/download-all.bat) (Temporary is not able to download all apps so use Manual download)
     
-    is working for **Tomcat**, **Maven**, **ideaIU** and **postgresql**
+    is working for **Notepad++**, **Tomcat**, **Maven**, **ideaIU** and **postgresql**
 
 
 ### Applications
 
+- [x] **Notepad++** [`installers/npp.6.8.8.Installer.exe`](https://notepad-plus-plus.org/)
 - [x] **Java** [`installers/jdk-8u73-windows-x64.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) OR [`installers/jdk-8u73-windows-i586.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [x] **Git** [`installers/Git-2.7.1.2-64-bit.exe`](https://github.com/git-for-windows/git/releases/download/v2.7.1.windows.2/Git-2.7.1.2-64-bit.exe) OR [`installers/Git-2.7.1.2-32-bit.exe`](https://github.com/git-for-windows/git/releases/download/v2.7.1.windows.2/Git-2.7.1.2-32-bit.exe)
 - [x] **Maven** [`installers/apache-maven-3.3.3-bin.zip`](https://maven.apache.org/download.cgi)
@@ -24,14 +25,14 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 
 ## Running installers
 
-- [ ] Select [`install-all.bat`](install-all.bat)
+- [ ] Select [`install-all.bat`](install-all.bat) OR  [`install-all-qa.bat`](install-all-qa.bat)
 - [ ] Right click -> `Run as administrator`
 
 ## Manual setup
 
 **Edit `Path` variables**
 
-**Windows 10**:
+**Windows Vista/8/10**:
 
 Rigth Click on `My Computer` -> `Properties` -> `Advanced system settings` -> `Advanced` -> 
 `Environment Variables` -> `System variables` -> `Path` (select path) -> `Edit` ... 
@@ -46,6 +47,7 @@ At the end of this script you'll probable (if the each app have been installed),
 
 Following folder structure:
 
+- [x] `C:\Program Files (x86)\Notepad++\`
 - [x] `C:\Program Files\Java\jdk1.8.0_73\`
 - [x] `C:\Program Files (x86)\Git\`
 - [x] `C:\Progs\apache-maven-3.3.9\`
