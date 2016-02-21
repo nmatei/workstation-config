@@ -2,7 +2,7 @@
 
 ## Applications that will be installed
 
-Make sure you have all this applications in [`installers/`](installers/) folder:
+Make sure you have all applications inside [`installers/`](installers/) folder:
 
 - [x] **Manually** download/add each installer in: [`installers/`](installers/)
 
@@ -10,7 +10,8 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 
 - [ ] **Run** [`installers/download-all.bat`](installers/download-all.bat) (Temporary is not able to download all apps so use Manual download)
     
-    is working for **Notepad++**, **Tomcat**, **Maven**, **ideaIU** and **postgresql**
+    Automatic download is working for:
+        **Notepad++**, **Tomcat**, **Maven**, **ideaIU** and **postgresql**
 
 
 ### Applications
@@ -32,7 +33,7 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 
 **Edit `Path` variables**
 
-**Windows Vista/8/10**:
+**Windows Vista/7/8/10**:
 
 Rigth Click on `My Computer` -> `Properties` -> `Advanced system settings` -> `Advanced` -> 
 `Environment Variables` -> `System variables` -> `Path` (select path) -> `Edit` ... 
