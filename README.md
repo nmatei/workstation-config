@@ -17,7 +17,7 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 
 - [x] **Notepad++** [`installers/npp.6.8.8.Installer.exe`](https://notepad-plus-plus.org/)
 - [x] **Java** [`installers/jdk-8u73-windows-x64.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) OR [`installers/jdk-8u73-windows-i586.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [x] **Git** [`installers/Git-2.7.1.2-64-bit.exe`](https://github.com/git-for-windows/git/releases/download/v2.7.1.windows.2/Git-2.7.1.2-64-bit.exe) OR [`installers/Git-2.7.1.2-32-bit.exe`](https://github.com/git-for-windows/git/releases/download/v2.7.1.windows.2/Git-2.7.1.2-32-bit.exe)
+- [x] **Git** [`installers/Git-2.7.1.2-64-bit.exe`](https://git-scm.com/downloads) OR [`installers/Git-2.7.1.2-32-bit.exe`](https://git-scm.com/downloads)
 - [x] **Maven** [`installers/apache-maven-3.3.3-bin.zip`](https://maven.apache.org/download.cgi)
 - [x] **Tomcat** [`installers/apache-tomcat-8.0.20-bin.zip`](https://tomcat.apache.org/index.html)
 - [ ] IntelliJ IDEA [`installers/ideaIU-15.0.3.exe`](https://www.jetbrains.com/idea/)
