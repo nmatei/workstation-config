@@ -21,7 +21,7 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 - [x] **Git** [`installers/Git-2.7.1.2-64-bit.exe`](https://git-scm.com/downloads) OR [`installers/Git-2.7.1.2-32-bit.exe`](https://git-scm.com/downloads)
 - [x] **Maven** [`installers/apache-maven-3.3.3-bin.zip`](https://maven.apache.org/download.cgi)
 - [x] **Tomcat** [`installers/apache-tomcat-8.0.20-bin.zip`](https://tomcat.apache.org/index.html)
-- [ ] IntelliJ IDEA [`installers/ideaIU-15.0.3.exe`](https://www.jetbrains.com/idea/)
+- [ ] IntelliJ IDEA [`installers/ideaIU-15.0.3.exe`](https://www.jetbrains.com/idea/) OR [`installers/ideaIC-15.0.3.exe`](https://www.jetbrains.com/idea/)
 - [ ] pgAdmin [`installers/pgAdmin.exe`](http://www.pgadmin.org/download/)
 
 ## Running installers
