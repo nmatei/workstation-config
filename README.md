@@ -26,7 +26,10 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 
 ## Running installers
 
-- [ ] Select [`install-all.bat`](install-all.bat) OR  [`install-all-qa.bat`](install-all-qa.bat)
+- [ ] Select the needed file:
+    - [ ] [`install-automation.bat`](install-automation.bat) 
+    - [ ] [`install-dev.bat`](install-dev.bat)
+    - [ ] [`install-qa.bat`](install-qa.bat)
 - [ ] Right click -> `Run as administrator`
 
 ## Manual setup
