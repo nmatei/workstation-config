@@ -26,24 +26,30 @@ or run [`installers/download-all.bat`](installers/download-all.bat), then manual
 
 ## Running installers
 
-- [ ] Select the needed file:
+- [ ] `Right click` on needed installer:
     - [ ] [`install-automation.bat`](install-automation.bat) 
     - [ ] [`install-dev.bat`](install-dev.bat)
     - [ ] [`install-qa.bat`](install-qa.bat)
-- [ ] Right click -> `Run as administrator`
+- [ ] And `Run as administrator`
 
 ## Manual setup
 
 **Edit `Path` variables**
 
-**Windows Vista/7/8/10**:
+Windows Vista/7/8/10:
 
-Rigth Click on `My Computer` -> `Properties` -> `Advanced system settings` -> `Advanced` -> 
+`Right Click` on `My Computer` -> `Properties` -> `Advanced system settings` -> `Advanced` -> 
 `Environment Variables` -> `System variables` -> `Path` (select path) -> `Edit` ... 
    
 and add next line at the end of it:
 
-`;%JAVA_HOME%\bin;%M2_HOME%\bin;%GIT_HOME%\bin;` 
+**Automation Testers & Developers**:
+
+- [ ] `;%JAVA_HOME%\bin;%M2_HOME%\bin;%GIT_HOME%\bin;`
+
+**Manual Tersters**:
+
+- [ ] `;%JAVA_HOME%\bin;%M2_HOME%\bin;`
 
 ## Results
 
