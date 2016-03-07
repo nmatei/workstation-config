@@ -5,7 +5,7 @@ set "PROGS_DIR=C:\Progs"
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
-set "TOMCAT_VERSION=8.0.30"
+set "TOMCAT_VERSION=8.0.32"
 set "CATALINA_HOME_TMP=%PROGS_DIR%\apache-tomcat-%TOMCAT_VERSION%"
 
 rem ========================================
@@ -14,6 +14,10 @@ echo  ==============================
 echo ^| install and setup tomcat   ^|
 echo  ==============================
 cd "%CURRENT_DIR%\..\installers"
+
+if not exist "apache-tomcat-%TOMCAT_VERSION%.zip" (
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-source.ps1'" apache-tomcat-%TOMCAT_VERSION%.zip http://mirrors.hostingromania.ro/apache.org/tomcat/tomcat-8/v8.0.32/bin
+)
 
 echo unziping apache-tomcat-%TOMCAT_VERSION%.zip...
 "%JAVA_HOME%\bin\jar" xf apache-tomcat-%TOMCAT_VERSION%.zip

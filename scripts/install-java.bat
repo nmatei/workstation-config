@@ -15,9 +15,15 @@ echo please wait...
 cd "%CURRENT_DIR%\..\installers"
 
 if defined ProgramFiles(x86) (
+    if not exist "jdk-8u73-windows-x64.exe" (
+        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-app.ps1'" jdk-8u73-windows-x64.exe
+    )
     @echo installing java for 64-bit
     jdk-8u73-windows-x64.exe /quiet
 ) else (
+    if not exist "jdk-8u73-windows-i586.exe" (
+        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-app.ps1'" jdk-8u73-windows-i586.exe
+    )
     @echo installing java for 32-bit
     jdk-8u73-windows-i586.exe /quiet
 )
