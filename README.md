@@ -67,6 +67,14 @@ Following folder structure:
 - [x] `C:\Progs\apache-maven-3.3.9\`
 - [x] `C:\Progs\apache-tomcat-8.0.32\`
 
+And System variables added:
+
+- [x] JAVA_HOME=C:\Program Files\Java\jdk1.8.0_73
+- [x] M2_HOME=C:\Progs\apache-maven-3.3.3
+- [x] GIT_HOME=C:\Program Files\Git
+
+[results screens](https://github.com/nmatei/workstation-config/issues/1)
+
 ## Manually install
 
 Depending on your needs you could be asked to manually download (if the app is not present in [`installers/`](installers/)), and install some of this applications:
