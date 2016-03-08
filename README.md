@@ -30,11 +30,11 @@ Continue with [Running installers](#running-installers).
 
 ## Running installers
 
-- [ ] `Right click` on needed installer:
+- [ ] **Right click** on needed installer:
     - [ ] [`install-automation.bat`](install-automation.bat) 
     - [ ] [`install-dev.bat`](install-dev.bat)
     - [ ] [`install-qa.bat`](install-qa.bat)
-- [ ] And `Run as administrator`
+- [ ] And **Run as administrator**
 
 ![Run as administrator](https://cloud.githubusercontent.com/assets/2863309/13601668/74a9388e-e53a-11e5-859d-203043ca10e5.jpg)
 
@@ -71,9 +71,9 @@ Following folder structure:
 
 And System variables added:
 
-- [x] JAVA_HOME=C:\Program Files\Java\jdk1.8.0_73
-- [x] M2_HOME=C:\Progs\apache-maven-3.3.3
-- [x] GIT_HOME=C:\Program Files\Git
+- [x] `JAVA_HOME = C:\Program Files\Java\jdk1.8.0_73`
+- [x] `M2_HOME = C:\Progs\apache-maven-3.3.3`
+- [x] `GIT_HOME = C:\Program Files\Git`
 
 [results screens](https://github.com/nmatei/workstation-config/issues/1)
 
