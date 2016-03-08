@@ -1,28 +1,32 @@
 # Environment Setup
 
-## Applications that will be installed
+This project is for [FastTrackIT](http://www.fasttrackit.org/) students to configure their PC faster. But feel free to share and use for any other needs.
 
-Make sure you have all applications inside [`installers/`](installers/) folder:
+## Applications that can be Installed
 
-- [x] **Manually** download/add each installer in: [`installers/`](installers/)
-
-or run [`installers/download-all.bat`](installers/download-all.bat), then manually download missing apps : *Java*, *Git*
-
-- [ ] **Run** [`installers/download-all.bat`](installers/download-all.bat) (Temporary is not able to download all apps so use Manual download)
-    
-    Automatic download is working for:
-        **Notepad++**, **Tomcat**, **Maven**, **ideaIU** and **postgresql**
-
-
-### Applications
+Depending on the needs, some of following applications will be installed when you run **install-{type}.bat**:
 
 - [x] **Notepad++** [`installers/npp.6.8.8.Installer.exe`](https://notepad-plus-plus.org/)
 - [x] **Java** [`installers/jdk-8u73-windows-x64.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) OR [`installers/jdk-8u73-windows-i586.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [x] **Git** [`installers/Git-2.7.1.2-64-bit.exe`](https://git-scm.com/downloads) OR [`installers/Git-2.7.1.2-32-bit.exe`](https://git-scm.com/downloads)
+- [x] **Git** [`installers/Git-2.7.2-64-bit.exe`](https://git-scm.com/downloads) OR [`installers/Git-2.7.2-32-bit.exe`](https://git-scm.com/downloads)
 - [x] **Maven** [`installers/apache-maven-3.3.3-bin.zip`](https://maven.apache.org/download.cgi)
-- [x] **Tomcat** [`installers/apache-tomcat-8.0.20-bin.zip`](https://tomcat.apache.org/index.html)
-- [ ] IntelliJ IDEA [`installers/ideaIU-15.0.3.exe`](https://www.jetbrains.com/idea/) OR [`installers/ideaIC-15.0.3.exe`](https://www.jetbrains.com/idea/)
-- [ ] pgAdmin [`installers/pgAdmin.exe`](http://www.pgadmin.org/download/)
+- [x] **Tomcat** [`installers/apache-tomcat-8.0.32-bin.zip`](https://tomcat.apache.org/index.html)
+
+If any of the applications are configured correctly on your PC, it will not be installed.
+
+## First step setup
+
+There are few ways to get started, based on that, continue with following instructions:
+
+### Your trainer give you a USB Stick with all installers
+
+Continue with [Running installers](#running-installers).
+
+### Download ZIP
+
+- [x] [Download ZIP](./archive/master.zip).
+- [x] Extract it (unzipp)
+- [x] Continue with [Running installers](#running-installers).
 
 ## Running installers
 
@@ -61,4 +65,15 @@ Following folder structure:
 - [x] `C:\Program Files\Java\jdk1.8.0_73\`
 - [x] `C:\Program Files (x86)\Git\`
 - [x] `C:\Progs\apache-maven-3.3.9\`
-- [x] `C:\Progs\apache-tomcat-8.0.30\`
+- [x] `C:\Progs\apache-tomcat-8.0.32\`
+
+## Manually install
+
+Depending on your needs you could be asked to manually download (if the app is not present in [`installers/`](installers/)), and install some of this applications:
+
+- [ ] IntelliJ IDEA [`installers/ideaIU-15.0.4.exe`](https://www.jetbrains.com/idea/) OR [`installers/ideaIC-15.0.4.exe`](https://www.jetbrains.com/idea/)
+- [ ] pgAdmin [`installers/pgAdmin.exe`](http://www.pgadmin.org/download/)
+
+## Trainer notes
+
+Before copy entire project to USB Stick, make sure you have all applications in [`installers/`](installers/) by **Running** [`installers/download-all.bat`](installers/download-all.bat)
