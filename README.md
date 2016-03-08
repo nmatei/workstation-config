@@ -36,6 +36,8 @@ Continue with [Running installers](#running-installers).
     - [ ] [`install-qa.bat`](install-qa.bat)
 - [ ] And `Run as administrator`
 
+![Run as administrator](https://cloud.githubusercontent.com/assets/2863309/13601668/74a9388e-e53a-11e5-859d-203043ca10e5.jpg)
+
 ## Manual setup
 
 **Edit `Path` variables**
