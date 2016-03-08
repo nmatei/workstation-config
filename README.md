@@ -24,7 +24,7 @@ Continue with [Running installers](#running-installers).
 
 ### Download ZIP
 
-- [x] [Download ZIP](./archive/master.zip).
+- [x] [Download ZIP](/nmatei/workstation-config/archive/master.zip).
 - [x] Extract it (unzipp)
 - [x] Continue with [Running installers](#running-installers).
 
