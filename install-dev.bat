@@ -13,6 +13,9 @@ pause
 
 echo  ================================================
 
+call scripts/install-notepad.bat
+cd /d "%~dp0"
+
 call scripts/install-java.bat
 cd /d "%~dp0"
 
