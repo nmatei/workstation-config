@@ -17,11 +17,11 @@ echo please wait...
 
 cd "%CURRENT_DIR%\..\installers"
 
-if not exist "npp.6.8.8.Installer.exe" (
-    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-source.ps1'" npp.6.8.8.Installer.exe https://notepad-plus-plus.org/repository/6.x/6.8.8
+if not exist "npp.7.2.1.Installer.exe" (
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-source.ps1'" npp.7.2.1.Installer.exe https://notepad-plus-plus.org/repository/7.x/7.2.1
 )
 
-npp.6.8.8.Installer.exe /S
+npp.7.2.1.Installer.exe /S
 
 goto done
 
