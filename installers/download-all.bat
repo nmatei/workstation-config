@@ -1,12 +1,11 @@
+@echo off
+
+echo Downloading Applications:
+
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
-
-set "TOMCAT_VERSION=8.5.11"
-set "M2_VERSION=3.3.9"
-set "WORDPRESS_VERSION=4.7.2"
-set "NOTEPAD_VERSION=7.3.1"
-
+call %CURRENT_DIR%\..\scripts\versions.bat
 
 if defined ProgramFiles(x86) (
     if not exist "jdk-8u73-windows-x64.exe" (

@@ -5,7 +5,7 @@ set "PROGS_DIR=C:\Progs"
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
-set "TOMCAT_VERSION=8.5.11"
+call %CURRENT_DIR%\versions.bat
 set "CATALINA_HOME_TMP=%PROGS_DIR%\apache-tomcat-%TOMCAT_VERSION%"
 
 rem ========================================

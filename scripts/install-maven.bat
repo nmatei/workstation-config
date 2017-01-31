@@ -5,7 +5,7 @@ set "PROGS_DIR=C:\Progs"
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
-set "M2_VERSION=3.3.9"
+call %CURRENT_DIR%\versions.bat
 set "M2_HOME_TMP=%PROGS_DIR%\apache-maven-%M2_VERSION%"
 
 rem ========================================
