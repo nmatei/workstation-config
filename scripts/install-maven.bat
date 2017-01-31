@@ -16,7 +16,7 @@ echo  ==============================
 cd "%CURRENT_DIR%\..\installers"
 
 if not exist "apache-maven-%M2_VERSION%-bin.zip" (
-    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-source.ps1'" apache-maven-%M2_VERSION%-bin.zip http://mirrors.m247.ro/apache/maven/maven-3/3.3.9/binaries
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-source.ps1'" apache-maven-%M2_VERSION%-bin.zip http://mirrors.m247.ro/apache/maven/maven-3/%M2_VERSION%/binaries
 )
 
 echo unziping apache-maven-%M2_VERSION%-bin.zip...

@@ -5,7 +5,7 @@ set "PROGS_DIR=C:\Progs"
 cd /d "%~dp0"
 set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
-set "TOMCAT_VERSION=8.5.8"
+set "TOMCAT_VERSION=8.5.11"
 set "CATALINA_HOME_TMP=%PROGS_DIR%\apache-tomcat-%TOMCAT_VERSION%"
 
 rem ========================================
@@ -16,7 +16,7 @@ echo  ==============================
 cd "%CURRENT_DIR%\..\installers"
 
 if not exist "apache-tomcat-%TOMCAT_VERSION%.zip" (
-    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-source.ps1'" apache-tomcat-%TOMCAT_VERSION%.zip http://mirror.evowise.com/apache/tomcat/tomcat-8/v8.5.8/bin
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-source.ps1'" apache-tomcat-%TOMCAT_VERSION%.zip http://mirror.evowise.com/apache/tomcat/tomcat-8/v%TOMCAT_VERSION%/bin
 )
 
 echo unziping apache-tomcat-%TOMCAT_VERSION%.zip...

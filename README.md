@@ -6,11 +6,11 @@ This project is for [FastTrackIT](http://www.fasttrackit.org/) students to confi
 
 Depending on the needs, some of following applications will be installed when you run **install-{type}.bat**:
 
-- [x] **Notepad++** [`installers/npp.7.2.1.Installer.exe`](https://notepad-plus-plus.org/)
+- [x] **Notepad++** [`installers/npp.7.3.1.Installer.exe`](https://notepad-plus-plus.org/)
 - [x] **Java** [`installers/jdk-8u73-windows-x64.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) OR [`installers/jdk-8u73-windows-i586.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [x] **Git** [`installers/Git-2.7.2-64-bit.exe`](https://git-scm.com/downloads) OR [`installers/Git-2.7.2-32-bit.exe`](https://git-scm.com/downloads)
 - [x] **Maven** [`installers/apache-maven-3.3.3-bin.zip`](https://maven.apache.org/download.cgi)
-- [x] **Tomcat** [`installers/apache-tomcat-8.5.8-bin.zip`](https://tomcat.apache.org/index.html)
+- [x] **Tomcat** [`installers/apache-tomcat-8.5.11-bin.zip`](https://tomcat.apache.org/index.html)
 
 If any of the applications are configured correctly on your PC, it will not be installed.
 
@@ -67,12 +67,12 @@ Following folder structure:
 - [x] `C:\Program Files\Java\jdk1.8.0_73\`
 - [x] `C:\Program Files (x86)\Git\`
 - [x] `C:\Progs\apache-maven-3.3.9\`
-- [x] `C:\Progs\apache-tomcat-8.5.8\`
+- [x] `C:\Progs\apache-tomcat-8.5.11\`
 
 And System variables added:
 
 - [x] `JAVA_HOME = C:\Program Files\Java\jdk1.8.0_73`
-- [x] `M2_HOME = C:\Progs\apache-maven-3.3.3`
+- [x] `M2_HOME = C:\Progs\apache-maven-3.3.9`
 - [x] `GIT_HOME = C:\Program Files\Git`
 
 [results screens](https://github.com/nmatei/workstation-config/issues/1)
@@ -81,7 +81,7 @@ And System variables added:
 
 Depending on your needs you could be asked to manually download (if the app is not present in [`installers/`](installers/)), and install some of this applications:
 
-- [ ] IntelliJ IDEA [`installers/ideaIU-15.0.4.exe`](https://www.jetbrains.com/idea/) OR [`installers/ideaIC-15.0.4.exe`](https://www.jetbrains.com/idea/)
+- [ ] IntelliJ IDEA [`installers/ideaIU-2016.3.3.exe`](https://www.jetbrains.com/idea/) OR [`installers/ideaIC-2016.3.3.exe`](https://www.jetbrains.com/idea/)
 - [ ] pgAdmin [`installers/pgAdmin.exe`](http://www.pgadmin.org/download/)
 
 ## Trainer notes
