@@ -81,9 +81,14 @@ And System variables added:
 
 Depending on your needs you could be asked to manually download (if the app is not present in [`installers/`](installers/)), and install some of this applications:
 
-- [ ] IntelliJ IDEA [`installers/ideaIU-2016.3.3.exe`](https://www.jetbrains.com/idea/) OR [`installers/ideaIC-2016.3.3.exe`](https://www.jetbrains.com/idea/)
+- [ ] IntelliJ IDEA [`installers/ideaIU-2016.3.4.exe`](https://www.jetbrains.com/idea/) OR [`installers/ideaIC-2016.3.4.exe`](https://www.jetbrains.com/idea/)
 - [ ] pgAdmin [`installers/pgAdmin.exe`](http://www.pgadmin.org/download/)
 
 ## Trainer notes
 
 Before copy entire project to USB Stick, make sure you have all applications in [`installers/`](installers/) by **Running** [`installers/download-all.bat`](installers/download-all.bat)
+
+
+## TODO's
+
+- [ ] Install xampp in silent mode "xampp.exe --help"
