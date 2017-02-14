@@ -35,6 +35,9 @@ if not exist "apache-tomcat-%TOMCAT_VERSION%.zip" (
 if not exist "ideaIU-%IDEA_VERSION%.exe" (
     PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" ideaIU-%IDEA_VERSION%.exe https://download.jetbrains.com/idea
 )
+if not exist "pgadmin3-1.22.2.zip" (
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" pgadmin3-1.22.2.zip https://ftp.postgresql.org/pub/pgadmin3/release/v1.22.2/win32/pgadmin3-1.22.2.zip
+)
 
 rem =========
 rem    PHP
