@@ -59,6 +59,10 @@ and add next line at the end of it:
 
 - [ ] `;%JAVA_HOME%\bin;%M2_HOME%\bin;`
 
+
+<br />
+<br />
+
 ## Results
 
 At the end of this script you'll probable (if the each app have been installed), have:
@@ -80,10 +84,12 @@ And System variables added:
 
 [results screens](https://github.com/nmatei/workstation-config/issues/1)
 
+<br />
+<br />
+
 ## Trainer notes
 
 Before copy entire project to USB Stick, make sure you have all applications in [`installers/`](installers/) by **Running as Admin** [`installers/download-all.bat`](installers/download-all.bat)
-
 
 ### TODO's
 
