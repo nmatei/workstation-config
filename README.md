@@ -70,7 +70,7 @@ Following folder structure:
 - [x] `C:\Program Files (x86)\Git\`
 - [x] `C:\Progs\apache-maven-3.3.9\`
 - [x] `C:\Progs\apache-tomcat-8.5.11\`
-- [x] `C:\xampp`
+- [x] `C:\xampp\`
 
 And System variables added:
 
