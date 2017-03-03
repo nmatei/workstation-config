@@ -1,6 +1,6 @@
 set "TOMCAT_VERSION=8.5.11"
 set "M2_VERSION=3.3.9"
 set "WORDPRESS_VERSION=4.7.2"
-set "NOTEPAD_VERSION=7.3.1"
+set "NOTEPAD_VERSION=7.3.2"
 set "IDEA_VERSION=2016.3.4"
 set "XAMPP_EXE=xampp-win32-7.0.13-1-VC14-installer.exe"
