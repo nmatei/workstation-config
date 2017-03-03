@@ -6,27 +6,29 @@ This project is for [FastTrackIT](http://www.fasttrackit.org/) students to confi
 
 Depending on the needs, some of following applications will be installed when you run **install-{type}.bat**:
 
-- [x] **Notepad++** [`installers/npp.7.3.1.Installer.exe`](https://notepad-plus-plus.org/)
-- [x] **Java** [`installers/jdk-8u73-windows-x64.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) OR [`installers/jdk-8u73-windows-i586.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [x] **Git** [`installers/Git-2.7.2-64-bit.exe`](https://git-scm.com/downloads) OR [`installers/Git-2.7.2-32-bit.exe`](https://git-scm.com/downloads)
-- [x] **Maven** [`installers/apache-maven-3.3.3-bin.zip`](https://maven.apache.org/download.cgi)
-- [x] **Tomcat** [`installers/apache-tomcat-8.5.11-bin.zip`](https://tomcat.apache.org/index.html)
+- [x] **Notepad++** [`installers/npp.{version}.Installer.exe`](https://notepad-plus-plus.org/)
+- [x] **Java** [`installers/jdk-{version}-windows-x64.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) OR [`installers/jdk-{version}-windows-i586.exe`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [x] **Git** [`installers/Git-{version}-64-bit.exe`](https://git-scm.com/downloads) OR [`installers/Git-{version}-32-bit.exe`](https://git-scm.com/downloads)
+- [x] **Maven** [`installers/apache-maven-{version}-bin.zip`](https://maven.apache.org/download.cgi)
+- [x] **Tomcat** [`installers/apache-tomcat-{version}-bin.zip`](https://tomcat.apache.org/index.html)
+- [x] **XAMPP** [`installers/xampp-{version}-installer.exe`](https://www.apachefriends.org/download.html)
 
-If any of the applications are configured correctly on your PC, it will not be installed.
+If any of the applications are configured correctly on your PC, they will not be re-installed.
 
 ## First step setup
 
-There are few ways to get started, based on that, continue with following instructions:
+There are 2 ways to get started, based on that, continue with following instructions:
 
-### Your trainer give you a USB Stick with all installers
+### 1) Your trainer give you a USB Stick with all installers
 
 Continue with [Running installers](#running-installers).
 
-### Download ZIP
+### 2) Download ZIP
 
 - [x] [Download ZIP](https://github.com/nmatei/workstation-config/archive/master.zip).
 - [x] Extract it (unzipp)
-- [x] Continue with [Running installers](#running-installers).
+
+Continue with [Running installers](#running-installers).
 
 ## Running installers
 
@@ -68,6 +70,7 @@ Following folder structure:
 - [x] `C:\Program Files (x86)\Git\`
 - [x] `C:\Progs\apache-maven-3.3.9\`
 - [x] `C:\Progs\apache-tomcat-8.5.11\`
+- [x] `C:\xampp`
 
 And System variables added:
 
@@ -77,18 +80,13 @@ And System variables added:
 
 [results screens](https://github.com/nmatei/workstation-config/issues/1)
 
-## Manually install
-
-Depending on your needs you could be asked to manually download (if the app is not present in [`installers/`](installers/)), and install some of this applications:
-
-- [ ] IntelliJ IDEA [`installers/ideaIU-2016.3.4.exe`](https://www.jetbrains.com/idea/) OR [`installers/ideaIC-2016.3.4.exe`](https://www.jetbrains.com/idea/)
-- [ ] pgAdmin [`installers/pgAdmin.exe`](http://www.pgadmin.org/download/)
-
 ## Trainer notes
 
-Before copy entire project to USB Stick, make sure you have all applications in [`installers/`](installers/) by **Running** [`installers/download-all.bat`](installers/download-all.bat)
+Before copy entire project to USB Stick, make sure you have all applications in [`installers/`](installers/) by **Running as Admin** [`installers/download-all.bat`](installers/download-all.bat)
 
 
-## TODO's
+### TODO's
 
 - [ ] Install xampp in silent mode "xampp.exe --help"
+- [ ] Install IntelliJ IDEA
+- [ ] Install pgAdmin
