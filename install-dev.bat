@@ -28,6 +28,9 @@ cd /d "%~dp0"
 call scripts/install-tomcat.bat
 cd /d "%~dp0"
 
+call scripts/install-xampp.bat
+cd /d "%~dp0"
+
 echo  ================================================
 echo ^| http://www.fasttrackit.org/
 echo  ================================================

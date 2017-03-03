@@ -42,8 +42,8 @@ if not exist "pgadmin3-1.22.2.zip" (
 rem =========
 rem    PHP
 rem =========
-if not exist "xampp-win32-7.0.13-1-VC14-installer.exe" (
-    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" xampp-win32-7.0.13-1-VC14-installer.exe https://www.apachefriends.org/xampp-files/7.0.13
+if not exist "%XAMPP_EXE%" (
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" %XAMPP_EXE% https://www.apachefriends.org/xampp-files/7.0.13
 )
 if not exist "wordpress-%WORDPRESS_VERSION%.zip" (
     PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" wordpress-%WORDPRESS_VERSION%.zip https://wordpress.org
