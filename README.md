@@ -57,7 +57,7 @@ and add next line at the end of it:
 
 **Manual Testers**:
 
-- [ ] `;%JAVA_HOME%\bin;%M2_HOME%\bin;%GIT_HOME%\usr\bin;`
+- [ ] `;%JAVA_HOME%\bin;%M2_HOME%\bin;`
 
 
 <br />
