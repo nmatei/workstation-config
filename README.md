@@ -48,16 +48,16 @@ Windows Vista/7/8/10:
 
 `Right Click` on `My Computer` -> `Properties` -> `Advanced system settings` -> `Advanced` -> 
 `Environment Variables` -> `System variables` -> `Path` (select path) -> `Edit` ... 
-   
+
 and add next line at the end of it:
 
 **Automation Testers & Developers**:
 
-- [ ] `;%JAVA_HOME%\bin;%M2_HOME%\bin;%GIT_HOME%\bin;`
+- [ ] `;%JAVA_HOME%\bin;%M2_HOME%\bin;%GIT_HOME%\bin;%GIT_HOME%\usr\bin;`
 
-**Manual Tersters**:
+**Manual Testers**:
 
-- [ ] `;%JAVA_HOME%\bin;%M2_HOME%\bin;`
+- [ ] `;%JAVA_HOME%\bin;%M2_HOME%\bin;%GIT_HOME%\usr\bin;`
 
 
 <br />
@@ -82,7 +82,7 @@ And System variables added:
 - [x] `M2_HOME = C:\Progs\apache-maven-3.3.9`
 - [x] `GIT_HOME = C:\Program Files\Git`
 
-[results screens](https://github.com/nmatei/workstation-config/issues/1)
+[Results Screens](https://github.com/nmatei/workstation-config/issues/1)
 
 <br />
 <br />
@@ -96,3 +96,4 @@ Before copy entire project to USB Stick, make sure you have all applications in 
 - [ ] Install xampp in silent mode "xampp.exe --help"
 - [ ] Install IntelliJ IDEA
 - [ ] Install pgAdmin
+- [ ] Automatically change `Path`
