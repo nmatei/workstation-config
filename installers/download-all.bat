@@ -7,22 +7,18 @@ set "CURRENT_DIR=%cd%"
 echo CURRENT_DIR='%CURRENT_DIR%'
 call %CURRENT_DIR%\..\scripts\versions.bat
 
-if defined ProgramFiles(x86) (
-    if not exist "jdk-8u73-windows-x64.exe" (
-        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" jdk-8u73-windows-x64.exe
-    )
-    if not exist "Git-2.7.2-64-bit.exe" (
-        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" Git-2.7.2-64-bit.exe
-    )
-) else (
-    if not exist "jdk-8u73-windows-i586.exe" (
-        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" jdk-8u73-windows-i586.exe
-    )
-    if not exist "Git-2.7.2-32-bit.exe" (
-        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" Git-2.7.2-32-bit.exe
-    )
+if not exist "jdk-8u73-windows-x64.exe" (
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" jdk-8u73-windows-x64.exe
 )
-
+if not exist "Git-2.7.2-64-bit.exe" (
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" Git-2.7.2-64-bit.exe
+)
+if not exist "jdk-8u73-windows-i586.exe" (
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" jdk-8u73-windows-i586.exe
+)
+if not exist "Git-2.7.2-32-bit.exe" (
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" Git-2.7.2-32-bit.exe
+)
 if not exist "npp.%NOTEPAD_VERSION%.Installer.exe" (
     PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" npp.%NOTEPAD_VERSION%.Installer.exe https://notepad-plus-plus.org/repository/7.x/%NOTEPAD_VERSION%
 )
@@ -51,7 +47,6 @@ if not exist "wordpress-%WORDPRESS_VERSION%.zip" (
 rem =========
 
 rem TODO https://intellij-support.jetbrains.com/hc/en-us/articles/206827139-Silent-or-Unattended-installation-on-Windows
-rem TODO add all versions in config file
 
 echo  ================================================
 echo             Applications Downloaded
