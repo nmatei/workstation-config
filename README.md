@@ -94,6 +94,6 @@ Before copy entire project to USB Stick, make sure you have all applications in 
 ### TODO's
 
 - [ ] Install xampp in silent mode "xampp.exe --help"
-- [ ] Install IntelliJ IDEA
+- [ ] Install [IntelliJ IDEA](https://www.jetbrains.com/)
 - [ ] Install pgAdmin
 - [ ] Automatically change `Path`
