@@ -72,14 +72,14 @@ Following folder structure:
 - [x] `C:\Program Files (x86)\Notepad++\`
 - [x] `C:\Program Files\Java\jdk1.8.0_73\`
 - [x] `C:\Program Files (x86)\Git\`
-- [x] `C:\Progs\apache-maven-3.3.9\`
-- [x] `C:\Progs\apache-tomcat-8.5.11\`
+- [x] `C:\Progs\apache-maven-3.5.0\`
+- [x] `C:\Progs\apache-tomcat-8.5.15\`
 - [x] `C:\xampp\`
 
 And System variables added:
 
 - [x] `JAVA_HOME = C:\Program Files\Java\jdk1.8.0_73`
-- [x] `M2_HOME = C:\Progs\apache-maven-3.3.9`
+- [x] `M2_HOME = C:\Progs\apache-maven-3.5.0`
 - [x] `GIT_HOME = C:\Program Files\Git`
 
 [Results Screens](https://github.com/nmatei/workstation-config/issues/1)
