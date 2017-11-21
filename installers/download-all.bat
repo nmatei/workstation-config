@@ -13,12 +13,13 @@ if not exist "jdk-8u73-windows-x64.exe" (
 if not exist "Git-2.7.2-64-bit.exe" (
     PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" Git-2.7.2-64-bit.exe
 )
-if not exist "jdk-8u73-windows-i586.exe" (
-    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" jdk-8u73-windows-i586.exe
-)
 if not exist "Git-2.7.2-32-bit.exe" (
     PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" Git-2.7.2-32-bit.exe
 )
+if not exist "jdk-8u73-windows-i586.exe" (
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-app.ps1'" jdk-8u73-windows-i586.exe
+)
+
 if not exist "npp.%NOTEPAD_VERSION%.Installer.exe" (
     PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" npp.%NOTEPAD_VERSION%.Installer.exe https://notepad-plus-plus.org/repository/7.x/%NOTEPAD_VERSION%
 )
