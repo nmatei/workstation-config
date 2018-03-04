@@ -15,17 +15,17 @@ echo please wait...
 cd "%CURRENT_DIR%\..\installers"
 
 if defined ProgramFiles(x86) (
-    if not exist "Git-2.7.2-64-bit.exe" (
-        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-app.ps1'" Git-2.7.2-64-bit.exe
+    if not exist "Git-%GIT_VERSION%-64-bit.exe" (
+        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-app.ps1'" Git-%GIT_VERSION%-64-bit.exe
     )
     @echo installing git for 64-bit
-    Git-2.7.2-64-bit.exe /SILENT
+    Git-%GIT_VERSION%-64-bit.exe /SILENT
 ) else (
-    if not exist "Git-2.7.2-32-bit.exe" (
-        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-app.ps1'" Git-2.7.2-32-bit.exe
+    if not exist "Git-%GIT_VERSION%-32-bit.exe" (
+        PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\..\installers\download-app.ps1'" Git-%GIT_VERSION%-32-bit.exe
     )
     @echo installing git for 32-bit
-    Git-2.7.2-32-bit.exe /SILENT
+    Git-%GIT_VERSION%-32-bit.exe /SILENT
 )
 
 setx /M GIT_HOME "%GIT_HOME_TMP%"
