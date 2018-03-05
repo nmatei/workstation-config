@@ -40,7 +40,7 @@ rem =========
 rem    PHP
 rem =========
 if not exist "%XAMPP_EXE%" (
-    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" %XAMPP_EXE% https://www.apachefriends.org/xampp-files/7.0.13
+    PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" %XAMPP_EXE% https://www.apachefriends.org/xampp-files/%XAMPP_VERSION%
 )
 if not exist "wordpress-%WORDPRESS_VERSION%.zip" (
     PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%CURRENT_DIR%\download-source.ps1'" wordpress-%WORDPRESS_VERSION%.zip https://wordpress.org
